@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RL9T03BZ4"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-7RL9T03BZ4');
+   </script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <title>Standard Building Supplies Ltd - North Vancouver Yard Map</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+   <link rel="icon" type="image/png" href="favicon.png">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css" type="text/css">
+   <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@2.3.4"></script>
+   <script src="locationsNV.js"></script>
+   <script src="app.js"></script>
+
+</head>
+
+<body onload="document.body.style.opacity='1'">
+   <div class="banner">
+      <img class="logo" src="Standard-Building-Supplies-Ltd..jpg">
+      <h1 class="title">North Vancouver Yard Map</h1>
+   </div>
+   <ul class="productlist animate__animated animate__fadeInDown w3-bar w3-light-grey">
+      <input class="search animate__animated animate__fadeInDown w3-bar-item w3-input w3-white w3-mobile" id="myInput"
+         onkeyup="myFunction()" type="text" placeholder="Search for a product..">
+      <ul class="searchlist">
+      </ul>
+      <ul class="categories">
+         <li class="Spruce" onclick="highlightgroup('layer2','Spruce')">Spruce</li>
+         <li class="Fir" onclick="highlightgroup('layer24','Fir')">Fir</li>
+         <li class="Plywood" onclick="highlightgroup('layer6','Plywood')">Plywood</li>
+         <li class="TreatedLumber" onclick="highlightgroup('layer3','TreatedLumber')">
+            Treated Lumber</li>
+         <li class="cedar" onclick="highlightgroup('layer1','cedar')">Cedar</li>
+         <li class="Fascia" onclick="highlightgroup('layer4','Fascia')">Fascia</li>
+         <li class="Rebar" onclick="highlightgroup('layer5','Rebar')">Rebar</li>
+         <li class="BuildingProducts" onclick="highlightgroup('layer19','BuildingProducts')">Building Products</li>
+         <li class="Concrete" onclick="highlightgroup('layer7','Concrete')">Concrete Products</li>
+         <li class="HardiProduct" onclick="highlightgroup('layer18','HardiProduct')">Hardie
+            Product</li>
+         <li class="FinishedLumbMould" onclick="highlightgroup('layer8','FinishedLumbMould')">
+            Finished Lumber / Mouldings</li>
+         <li class="Hardware" onclick="highlightgroup('layer16','Hardware')">
+            Hardware</li>
+         <li class="drywall" onclick="highlightgroup('layer10','drywall')">Drywall</li>
+         <li class="Housewrap" onclick="highlightgroup('layer13','Housewrap')">House Wrap</li>
+         <li class="Insulation" onclick="highlightgroup('layer9','Insulation')">
+            Insulation</li>
+         <li class="Styrofoam" onclick="highlightgroup('layer11','Styrofoam')">Styrofoam</li>
+         <li class="EngineeredWood" onclick="highlightgroup('layer17','EngineeredWood')">
+            Engineered Wood</li>
+      </ul>
+   </ul>
+   </div>
+   <div class="map" style="margin-top: 1%;">   
+   </div>
+   <div class="productdropdown">
+      <ul>
+      </ul>
+   </div>
+      <script>
+      const svgmap = "https://raw.githubusercontent.com/liamkstandard/test/refs/heads/main/NVQRYARDMAP.svg"
+   </script>
+   <script src="onload.js"></script>
+
+</body>
+
+</html>
